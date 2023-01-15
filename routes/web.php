@@ -18,6 +18,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/singlepost', function () {
+    return view('singlepost');
+});
+
 Route::get('/blogs', function () {
     return view('blogs', [
         'heading' => 'Latest Blogs',
